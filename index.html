@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>A 9 BOOKMARK</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/22a36b1486.js" crossorigin="anonymous">
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="w-75 py-5 m-auto">
+
+    <h2 class="fs-3 fw-bold text-secondary">Bookmarker</h2>
+
+    <hr>
+
+    <div class=" w-100 text-center m-auto bg-light p-3">
+      <form action="">
+        <h2 class="fs-3 fw-bold text-black p-3">Bookmark your favorite sites</h2>
+        <h3 class="p-3 fs-5">Site Name</h3>
+        <input class="form-control p-2 m-2 w-75 h-50 m-auto" type="text" id="bookMarkNameInput" placeholder="Bookmark Name">
+        <h3 class="p-3 fs-5">Site URL</h3>
+        <input class="form-control p-2 m-2 w-75 h-50 m-auto" type="text" id="websiteURLInput" placeholder="website URL">
+        <button id="submit" onclick="addWebsite();" class="btn btn-primary text-center m-3 shadow-lg">Submit</button>
+      </form>
+    </div>
+    <br>
+    <div class="w-100 text-center m-auto bg-light p-3">
+      <table class="table text-center">
+        <thead>
+          <th>Index</th>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Delete</th>
+          <th>Visit</th>
+          <th>Update</th>
+        </thead>
+        <tbody class="text-center m-auto" id="tableBody"></tbody>
+      </table>
+      <input oninput="searchProduct(this.value)" type="text" class="form-control w-75 m-auto py-2 my-5" placeholder="Searsh">
+    </div>
+    <hr>
+    <footer class="fw-bold text-secondary">© 2019 Bookmarker Inc.</footer>
+  </div>
+
+  <script src=" index.js">
+  </script>
+
+</body>
+
+</html>
